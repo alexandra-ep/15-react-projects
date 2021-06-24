@@ -4,7 +4,7 @@ export const List = ({ people }) => {
       {people.map((person) => {
         const { id, name, age, image } = person;
         return (
-          <article key={id} className="birthdays__list__item">
+          <article key={id} className="birthdays__container__list__item">
             <img src={image} alt={name} />
             <div>
               <h4>{name}</h4>

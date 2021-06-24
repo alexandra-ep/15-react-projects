@@ -12,8 +12,11 @@ export default function Projects() {
       <Link to="/reviews" target="_blank" rel="noopener noreferrer">
         Reviews
       </Link>
-      <Link to="/questions" target="_blank" rel="noopener noreferrer">
-        Questions | FAQ
+      <Link to="/faq" target="_blank" rel="noopener noreferrer">
+        FAQ Accordion
+      </Link>
+      <Link to="/menu" target="_blank" rel="noopener noreferrer">
+        Menu
       </Link>
     </div>
   );

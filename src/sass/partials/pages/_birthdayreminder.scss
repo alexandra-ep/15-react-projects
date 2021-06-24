@@ -1,59 +1,70 @@
 .birthdays {
-  width: 90vw;
-  margin: 5rem auto;
-  max-width: 450px;
-  background: white;
-  border-radius: 0.25rem;
-  padding: 3rem 2rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  min-height: 100vh;
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    270deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  padding-top: 5rem;
 
-  h3 {
-    font-weight: normal;
-    text-transform: none;
-    margin-bottom: 2rem;
-  }
-
-  &__list__item {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    column-gap: 0.75rem;
-    margin-bottom: 1.5rem;
-    align-items: center;
-
-    img {
-      width: 75px;
-      height: 75px;
-      object-fit: cover;
-      border-radius: 50%;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    h4 {
-      margin-bottom: 0.35rem;
-    }
-
-    p {
-      margin-bottom: 0;
-    }
-  }
-
-  button {
-    color: white;
-    display: block;
-    width: 100%;
-    border-color: transparent;
-    background: #f28ab2;
-    margin: 2rem auto 0 auto;
-    text-transform: capitalize;
-    font-size: 1.2rem;
-    padding: 0.5rem 0;
-    letter-spacing: 0.1rem;
+  &__container {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 450px;
+    background: white;
     border-radius: 0.25rem;
-    cursor: pointer;
+    padding: 3rem 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 
-    &:hover {
-      background: #f0649a;
-      transition: all 0.35s ease-in-out;
+    h3 {
+      font-weight: normal;
+      text-transform: none;
+      margin-bottom: 2rem;
+    }
+
+    &__list__item {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      column-gap: 0.75rem;
+      margin-bottom: 1.5rem;
+      align-items: center;
+
+      img {
+        width: 75px;
+        height: 75px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      h4 {
+        margin-bottom: 0.35rem;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    button {
+      color: white;
+      display: block;
+      width: 100%;
+      border-color: transparent;
+      background: #f28ab2;
+      margin: 2rem auto 0 auto;
+      text-transform: capitalize;
+      font-size: 1.2rem;
+      padding: 0.5rem 0;
+      letter-spacing: 0.1rem;
+      border-radius: 0.25rem;
+      cursor: pointer;
+
+      &:hover {
+        background: #f0649a;
+        transition: all 0.35s ease-in-out;
+      }
     }
   }
 }

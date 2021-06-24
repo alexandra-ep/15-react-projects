@@ -8,7 +8,7 @@ export default function Questions() {
   return (
     <div className="questions">
       <div className="questions__container">
-        <h3>Questions and answers about login</h3>
+        <h3>FAQ regarding login</h3>
         <div className="questions__container__info">
           {questions.map((question) => {
             return <Question key={question.id} {...question} />;
