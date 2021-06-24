@@ -1,0 +1,55 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background: #f1f5f8;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+}
+
+.projects {
+  margin: 0 auto;
+
+  .herobanner {
+    background: white;
+
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5rem 0;
+      max-width: 1120px;
+      margin: 0 auto;
+
+      img {
+        display: block;
+        width: 560px;
+      }
+    }
+  }
+
+  &__links {
+    a {
+      font-size: 1.8em;
+    }
+  }
+}

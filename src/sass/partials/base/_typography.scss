@@ -1,37 +1,8 @@
-body {
-  font-family: "Source Sans Pro", sans-serif;
-  background: #f1f5f8;
-  font-size: 0.875rem;
-  line-height: 1.5;
-}
-
-*,
-::after,
-::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-button {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: bold;
-}
-
 h1,
 h2,
 h3,
 h4 {
   letter-spacing: 0.1rem;
-  text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
 }
