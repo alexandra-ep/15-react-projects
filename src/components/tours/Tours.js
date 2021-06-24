@@ -1,6 +1,6 @@
 import { Tour } from "./Tour";
 
-export const Tours = ({ tours }) => {
+export const Tours = ({ tours, removeTour }) => {
   return (
     <div className="tours__container">
       <div className="tours__container__title">
@@ -9,7 +9,7 @@ export const Tours = ({ tours }) => {
       </div>
       <div className="tours__container__list">
         {tours.map((tour) => {
-          return <Tour key={tour.id} {...tour}></Tour>;
+          return <Tour key={tour.id} {...tour} removeTour={removeTour} ></Tour>;
         })}
       </div>
     </div>

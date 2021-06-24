@@ -8,6 +8,13 @@ export default function ToursPage() {
   const [loading, setLoading] = useState(true);
   const [tours, setTours] = useState([]);
 
+  // Remove tour
+  const removeTour = (id) => {
+    const newTours = tours.filter((tour) => tour.id !== id);
+    setTours(newTours);
+  };
+
+  // Fetch tours
   const fetchTours = async () => {
     setLoading(true);
 
@@ -27,16 +34,21 @@ export default function ToursPage() {
   }, []);
 
   if (loading) {
+    return <Loading />;
+  }
+
+  if(tours.length === 0) {
     return (
-      <section>
-        <Loading />
-      </section>
-    );
+      <div className="no-tours">
+        <h2>No tours left</h2>
+        <button className="no-tours-btn" onClick={fetchTours}>Refresh</button>
+      </div>
+    )
   }
 
   return (
     <section className="tours">
-      <Tours tours={tours} />
+      <Tours tours={tours} removeTour={removeTour} />
     </section>
   );
 }

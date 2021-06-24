@@ -9,6 +9,12 @@ export default function Projects() {
       <Link to="/tours" target="_blank" rel="noopener noreferrer">
         Tours
       </Link>
+      <Link to="/reviews" target="_blank" rel="noopener noreferrer">
+        Reviews
+      </Link>
+      <Link to="/questions" target="_blank" rel="noopener noreferrer">
+        Questions | FAQ
+      </Link>
     </div>
   );
 }

@@ -88,6 +88,26 @@
   }
 }
 
-.loading {
+.loading,
+.no-tours {
   text-align: center;
+  margin-top: 10em;
+}
+
+.no-tours-btn {
+  background: #49a6e9;
+  color: white;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  border: none;
+  margin-top: 1em;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.25rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  &:hover {
+    background: #1581cf;
+    transition: all 0.35s ease-in-out;
+  }
 }
