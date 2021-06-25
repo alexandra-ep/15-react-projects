@@ -1,5 +1,5 @@
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 0.875rem;
   line-height: 1.5;
 }
@@ -21,7 +21,7 @@ a {
 }
 
 button {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 600;
 }
 
@@ -30,9 +30,12 @@ button {
   background-image: linear-gradient(to bottom right, #efa2b4, #aef1ee);
   min-height: 100vh;
 
+  &__container {
+    background: rgba(255, 255, 255, 0.363);
+    min-height: 100vh;
+  }
+
   .herobanner {
-    background: rgba(255, 255, 255, 0.589);
-    
     &__content {
       display: flex;
       align-items: center;
@@ -67,6 +70,7 @@ button {
 
     a {
       font-size: 1.8em;
+      display: block;
       color: #72424d;
     }
   }

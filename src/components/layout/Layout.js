@@ -7,6 +7,7 @@ import Reviews from "../reviews/Reviews";
 import Questions from "../questions/Questions";
 import MenuPage from "../menu/MenuPage";
 import Portfolio from "../portfolio-tabs/Portfolio";
+import ReviewsSlider from "../reviews-slider/ReviewsSlider";
 
 export default function Layout() {
   return (
@@ -19,6 +20,7 @@ export default function Layout() {
         <Route path="/faq" component={Questions} />
         <Route path="/menu" component={MenuPage} />
         <Route path="/portfolio-tabs" component={Portfolio} />
+        <Route path="/reviews-slider" component={ReviewsSlider} />
       </Switch>
     </Router>
   );
