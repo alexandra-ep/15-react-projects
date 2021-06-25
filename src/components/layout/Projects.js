@@ -21,6 +21,9 @@ export default function Projects() {
         <Link to="/menu" target="_blank" rel="noopener noreferrer">
           Menu
         </Link>
+        <Link to="/portfolio-tabs" target="_blank" rel="noopener noreferrer">
+          Portfolio Tabs
+        </Link>
       </div>
     </div>
   );

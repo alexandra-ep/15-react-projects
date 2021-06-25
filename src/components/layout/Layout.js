@@ -6,6 +6,7 @@ import ToursPage from "../tours/ToursPage";
 import Reviews from "../reviews/Reviews";
 import Questions from "../questions/Questions";
 import MenuPage from "../menu/MenuPage";
+import Portfolio from "../portfolio-tabs/Portfolio";
 
 export default function Layout() {
   return (
@@ -17,6 +18,7 @@ export default function Layout() {
         <Route path="/reviews" component={Reviews} />
         <Route path="/faq" component={Questions} />
         <Route path="/menu" component={MenuPage} />
+        <Route path="/portfolio-tabs" component={Portfolio} />
       </Switch>
     </Router>
   );

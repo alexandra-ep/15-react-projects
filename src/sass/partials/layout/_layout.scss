@@ -1,6 +1,5 @@
 body {
-  font-family: "Source Sans Pro", sans-serif;
-  background: #f1f5f8;
+  font-family: 'Work Sans', sans-serif;
   font-size: 0.875rem;
   line-height: 1.5;
 }
@@ -22,16 +21,18 @@ a {
 }
 
 button {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: bold;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
 }
 
 .projects {
   margin: 0 auto;
+  background-image: linear-gradient(to bottom right, #efa2b4, #aef1ee);
+  min-height: 100vh;
 
   .herobanner {
-    background: white;
-
+    background: rgba(255, 255, 255, 0.589);
+    
     &__content {
       display: flex;
       align-items: center;
@@ -39,17 +40,34 @@ button {
       padding: 5rem 0;
       max-width: 1120px;
       margin: 0 auto;
+      color: #72424d;
 
       img {
         display: block;
-        width: 560px;
+        width: 520px;
+      }
+
+      p {
+        font-size: 1.45em;
+
+        a {
+          color: #72424d;
+
+          &:hover {
+            font-weight: 500;
+          }
+        }
       }
     }
   }
 
   &__links {
+    max-width: 1120px;
+    margin: 0 auto;
+
     a {
       font-size: 1.8em;
+      color: #72424d;
     }
   }
 }

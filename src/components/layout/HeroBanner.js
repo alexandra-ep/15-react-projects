@@ -4,12 +4,12 @@ export default function HeroBanner() {
       <div className="herobanner__content">
         <div className="herobanner__content__title">
           <h1>15 React Projects</h1>
-          <h2>
+          <p>
             Visit my website <a href="https://frontalex.com/">FrontAlex</a> for
             more
-          </h2>
+          </p>
         </div>
-        <img src="../images/react.svg" alt="React logo" />
+        <img src="../images/hero.svg" alt="React logo" />
       </div>
     </div>
   );
