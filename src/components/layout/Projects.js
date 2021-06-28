@@ -32,6 +32,15 @@ export default function Projects() {
           <Link to="/reviews-slider" target="_blank" rel="noopener noreferrer">
             Reviews Slider
           </Link>
+          <Link to="/lorem-generator" target="_blank" rel="noopener noreferrer">
+            Paragraph Generator
+          </Link>
+          <Link to="/color-generator" target="_blank" rel="noopener noreferrer">
+            Color Generator
+          </Link>
+          <Link to="/grocery-list" target="_blank" rel="noopener noreferrer">
+            Grocery List
+          </Link>
         </div>
       </div>
     </div>
