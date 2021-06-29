@@ -29,7 +29,11 @@ const SingleColor = ({ rgb, weight, index, hexColor }) => {
     >
       <p className="percent-value">{weight}%</p>
       <p className="color-value">{hexValue}</p>
-      {alert && <p className="color-alert">Copied to clipboard!</p>}
+      {alert && (
+        <p className={`color-alert ${index > 9 && "color-alert-light"}`}>
+          Copied to clipboard!
+        </p>
+      )}
     </div>
   );
 };

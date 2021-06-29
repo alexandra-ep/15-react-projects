@@ -11,6 +11,8 @@ import ReviewsSlider from "../reviews-slider/ReviewsSlider";
 import LoremGenerator from "../lorem-generator/LoremGenerator";
 import ColorGenerator from "../color-generator/ColorGenerator";
 import GroceryList from "../grocery-list/GroceryList";
+import Navbar from "../navbar/Navbar";
+import SidebarModal from "../sidebar-modal/SidebarModal";
 
 export default function Layout() {
   return (
@@ -27,6 +29,8 @@ export default function Layout() {
         <Route path="/lorem-generator" component={LoremGenerator} />
         <Route path="/color-generator" component={ColorGenerator} />
         <Route path="/grocery-list" component={GroceryList} />
+        <Route path="/navbar" component={Navbar} />
+        <Route path="/sidebar-modal" component={SidebarModal} />
       </Switch>
     </Router>
   );

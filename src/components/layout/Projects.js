@@ -41,6 +41,12 @@ export default function Projects() {
           <Link to="/grocery-list" target="_blank" rel="noopener noreferrer">
             Grocery List
           </Link>
+          <Link to="/navbar" target="_blank" rel="noopener noreferrer">
+            Navbar
+          </Link>
+          <Link to="/sidebar-modal" target="_blank" rel="noopener noreferrer">
+            Sidebar + Modal
+          </Link>
         </div>
       </div>
     </div>
