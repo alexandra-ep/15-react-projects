@@ -1,4 +1,4 @@
-import { useGlobalContext } from "./context";
+import { useGlobalContext } from "../../context/context";
 import logo from "../../images/logo.svg";
 import { FaTimes } from "react-icons/fa";
 import { social, links } from "./data";

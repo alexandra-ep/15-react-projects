@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { AppProvider } from "./components/sidebar-modal/context";
+import { AppProvider } from "./context/context";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(

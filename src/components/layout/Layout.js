@@ -13,6 +13,7 @@ import ColorGenerator from "../color-generator/ColorGenerator";
 import GroceryList from "../grocery-list/GroceryList";
 import Navbar from "../navbar/Navbar";
 import SidebarModal from "../sidebar-modal/SidebarModal";
+import StripeApp from "../stripe-submenu/StripeApp";
 
 export default function Layout() {
   return (
@@ -31,6 +32,7 @@ export default function Layout() {
         <Route path="/grocery-list" component={GroceryList} />
         <Route path="/navbar" component={Navbar} />
         <Route path="/sidebar-modal" component={SidebarModal} />
+        <Route path="/stripe-app" component={StripeApp} />
       </Switch>
     </Router>
   );

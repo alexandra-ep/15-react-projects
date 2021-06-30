@@ -47,6 +47,9 @@ export default function Projects() {
           <Link to="/sidebar-modal" target="_blank" rel="noopener noreferrer">
             Sidebar + Modal
           </Link>
+          <Link to="/stripe-app" target="_blank" rel="noopener noreferrer">
+            Stripe Submenu
+          </Link>
         </div>
       </div>
     </div>
