@@ -15,6 +15,7 @@ import Navbar from "../navbar/Navbar";
 import SidebarModal from "../sidebar-modal/SidebarModal";
 import StripeApp from "../stripe-submenu/StripeApp";
 import Cart from "../cart/Cart";
+import CocktailsApp from "../cocktails/CocktailsApp";
 
 export default function Layout() {
   return (
@@ -35,6 +36,7 @@ export default function Layout() {
         <Route path="/sidebar-modal" component={SidebarModal} />
         <Route path="/stripe-app" component={StripeApp} />
         <Route path="/cart" component={Cart} />
+        <Route path="/cocktails-app" component={CocktailsApp} />
       </Switch>
     </Router>
   );

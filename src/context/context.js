@@ -1,8 +1,18 @@
-import React, { useState, useContext, useReducer, useEffect } from "react";
+import React, {
+  useState,
+  useContext,
+  useReducer,
+  useEffect,
+  useCallback,
+} from "react";
 import sublinks from "../components/stripe-submenu/data";
 import products from "../components/cart/data";
 import reducer from "../components/cart/reducer";
 
+const cocktailsUrl =
+  "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
+
+/* PART OF CART */
 const url = "https://course-api.com/react-useReducer-cart-project";
 
 const initialState = {
@@ -11,6 +21,7 @@ const initialState = {
   total: 0,
   amount: 0,
 };
+/*____________________________*/
 
 const AppContext = React.createContext();
 
@@ -100,6 +111,10 @@ const AppProvider = ({ children }) => {
   useEffect(() => {
     dispatch({ type: "GET_TOTALS" });
   }, [state.cart]);
+
+  /*____________________________*/
+
+  /* COCKTAILS APP */
 
   /*____________________________*/
 

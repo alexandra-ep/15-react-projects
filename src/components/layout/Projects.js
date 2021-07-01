@@ -53,6 +53,9 @@ export default function Projects() {
           <Link to="/cart" target="_blank" rel="noopener noreferrer">
             Cart
           </Link>
+          <Link to="/cocktails-app" target="_blank" rel="noopener noreferrer">
+            Cocktails
+          </Link>
         </div>
       </div>
     </div>
