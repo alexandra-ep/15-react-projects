@@ -1,5 +1,16 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useReducer, useEffect } from "react";
 import sublinks from "../components/stripe-submenu/data";
+import products from "../components/cart/data";
+import reducer from "../components/cart/reducer";
+
+const url = "https://course-api.netlify.app/api/react-useReducer-cart-project";
+
+const initialState = {
+  loading: false,
+  cart: products,
+  total: 0,
+  amount: 0,
+};
 
 const AppContext = React.createContext();
 
@@ -27,9 +38,9 @@ const AppProvider = ({ children }) => {
 
   /* STRIPE APP */
   const [isStripeSidebarOpen, setIsStripeSidebarOpen] = useState(false);
-  const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
-  const [location, setLocation] = useState({});
+  const [isSubmenuOpen, setIsSubmenuOpen] = useState(true);
   const [page, setPage] = useState({ page: "", links: [] });
+  const [location, setLocation] = useState({});
 
   const openStripeSidebar = () => {
     setIsStripeSidebarOpen(true);
@@ -51,6 +62,15 @@ const AppProvider = ({ children }) => {
   };
   /*____________________________*/
 
+  /* CART */
+  const [state, dispatch] = useReducer(reducer, initialState);
+
+  const clearCart = () => {
+    dispatch({ type: "CLEAR_CART" });
+  };
+
+  /*____________________________*/
+
   return (
     <AppContext.Provider
       value={{
@@ -66,8 +86,10 @@ const AppProvider = ({ children }) => {
         openSubmenu,
         closeStripeSidebar,
         closeSubmenu,
-        location,
         page,
+        location,
+        ...state,
+        clearCart,
       }}
     >
       {children}

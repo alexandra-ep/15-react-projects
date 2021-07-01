@@ -50,6 +50,9 @@ export default function Projects() {
           <Link to="/stripe-app" target="_blank" rel="noopener noreferrer">
             Stripe Submenu
           </Link>
+          <Link to="/cart" target="_blank" rel="noopener noreferrer">
+            Cart
+          </Link>
         </div>
       </div>
     </div>

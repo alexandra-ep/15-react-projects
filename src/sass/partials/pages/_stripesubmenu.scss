@@ -1,5 +1,6 @@
 .stripeapp {
   &__nav {
+    height: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,19 +41,6 @@
         display: none;
       }
     }
-  }
-
-  &__hero::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 65%;
-    top: 0;
-    left: 0;
-    background: url("../../../images/hero.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: -1;
   }
 
   &__hero {
@@ -103,7 +91,20 @@
     }
   }
 
-  .show {
+  &__hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 65%;
+    top: 0;
+    left: 0;
+    background: url("../../../images/hero.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  &__sidebar.show {
     visibility: visible;
     z-index: 2;
     transform: scale(1);
@@ -175,20 +176,6 @@
     }
   }
 
-  &__submenu::before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 5px solid white;
-    position: absolute;
-    top: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
   &__submenu.show {
     display: block;
   }
@@ -241,6 +228,20 @@
     &__container.col-4 {
       grid-template-columns: repeat(4, 1fr);
     }
+  }
+
+  &__submenu::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid white;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -308,7 +309,7 @@
 
       &__info {
         h1 {
-          font-size: 5.5rem;
+          font-size: 3rem;
         }
 
         p {
@@ -321,7 +322,7 @@
         justify-self: center;
 
         &--phone {
-          width: 15rem;
+          width: 12rem;
         }
       }
     }
@@ -335,7 +336,28 @@
 @media screen and (min-width: 1200px) {
   .stripeapp {
     &__hero__container {
+      padding-top: 8.5em;
       padding-bottom: 20vh;
+      align-items: end;
+
+      h1 {
+        font-size: 5.5em;
+      }
+
+      &__images--phone {
+        width: 15rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .stripeapp {
+    &__hero__container {
+
+      h1 {
+        font-size: 6em;
+      }
 
       &__images--phone {
         width: 17rem;
