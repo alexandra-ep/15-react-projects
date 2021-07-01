@@ -7,7 +7,7 @@ export default function Cart() {
 
   if (loading) {
     return (
-      <div className="loading">
+      <div className="loading_products">
         <h1>loading...</h1>
       </div>
     );
