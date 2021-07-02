@@ -5,7 +5,7 @@ const Error = () => {
     <div className="cocktails__error">
       <div className="cocktails__error__container">
         <h1>Oops! It's a dead end</h1>
-        <Link to="/cocktails-app" className="link-btn">
+        <Link to="/cocktails-app" className="links-btn">
           Back home
         </Link>
       </div>

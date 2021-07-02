@@ -1,5 +1,5 @@
 const Loading = () => {
-  return <div className="loader"></div>;
+  return <div className="lds-dual-ring"></div>;
 };
 
 export default Loading;

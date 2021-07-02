@@ -115,6 +115,43 @@ const AppProvider = ({ children }) => {
   /*____________________________*/
 
   /* COCKTAILS APP */
+  const [loadingCocktails, setLoadingCocktails] = useState(true);
+  const [searchTerm, setSearchTerm] = useState("a");
+  const [cocktails, setCocktails] = useState([]);
+
+  const fetchCocktails = useCallback(async () => {
+    setLoadingCocktails(true);
+    try {
+      const response = await fetch(`${cocktailsUrl}${searchTerm}`);
+      const data = await response.json();
+      const { drinks } = data;
+
+      if (drinks) {
+        const newCocktails = drinks.map((item) => {
+          const { idDrink, strDrink, strDrinkThumb, strAlcholic, strGlass } =
+            item;
+          return {
+            id: idDrink,
+            name: strDrink,
+            image: strDrinkThumb,
+            info: strAlcholic,
+            glass: strGlass,
+          };
+        });
+        setCocktails(newCocktails);
+      } else {
+        setCocktails([]);
+      }
+      setLoadingCocktails(false);
+    } catch (error) {
+      console.log(error);
+      setLoadingCocktails(false);
+    }
+  }, [searchTerm]);
+
+  useEffect(() => {
+    fetchCocktails();
+  }, [searchTerm, fetchCocktails]);
 
   /*____________________________*/
 
@@ -141,6 +178,9 @@ const AppProvider = ({ children }) => {
         //increase,
         //decrease,
         toggleAmount,
+        loadingCocktails,
+        cocktails,
+        setSearchTerm,
       }}
     >
       {children}
