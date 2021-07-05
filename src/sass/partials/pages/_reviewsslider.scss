@@ -1,7 +1,10 @@
 .slider {
   width: 90vw;
-  margin: 5rem auto;
+  min-height: 100vh;
+  margin: 0 auto;
   max-width: 1170px;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 
   &__container {
     &__title {
@@ -20,7 +23,7 @@
         color: #ba5d2c;
         margin-right: 1rem;
         font-weight: 600;
-      }
+      } 
     }
 
     &__section {

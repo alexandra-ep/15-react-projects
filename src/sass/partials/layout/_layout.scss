@@ -25,53 +25,108 @@ button {
   font-weight: 600;
 }
 
+/* HOME PAGE */
 .projects {
   margin: 0 auto;
-  background-image: linear-gradient(to bottom right, #efa2b4, #aef1ee);
-  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, #ffd2f9, #b4fffb);
+  height: 100%;
 
   &__container {
     background: rgba(255, 255, 255, 0.363);
     min-height: 100vh;
-  }
 
-  .herobanner {
-    &__content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 5rem 0;
+    .herobanner {
+      &__content {
+        padding: 5rem 0;
+        max-width: 1120px;
+        margin: 0 auto;
+        color: #705a6f;
+        text-align: center;
+
+        p {
+          font-size: 1.45em;
+
+          a {
+            color: #705a6f;
+            transition: all 0.3s linear;
+
+            &:hover {
+              font-weight: 500;
+            }
+          }
+        }
+
+        .underline {
+          width: 7rem;
+          height: 0.15rem;
+          background: #705a6f;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+
+    &__links {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 3rem 3rem;
       max-width: 1120px;
       margin: 0 auto;
-      color: #72424d;
+      padding: 1em 1em 5em 1em;
 
-      img {
-        display: block;
-        width: 520px;
-      }
+      &__link {
+        transition: transform 0.2s;
 
-      p {
-        font-size: 1.45em;
+        img {
+          object-fit: cover;
+          border-radius: 0.25rem 0.25rem 0 0;
+          width: 100%;
+          height: 70%;
+        }
 
-        a {
-          color: #72424d;
+        h3 {
+          background: rgb(255, 255, 255);
+          text-align: center;
+          font-size: 1.5em;
+          padding: 0.7em;
+          margin-top: -0.28em;
+          color: #705a6f;
+        }
 
-          &:hover {
-            font-weight: 500;
-          }
+        &:hover {
+          -ms-transform: scale(1.1); /* IE 9 */
+          -webkit-transform: scale(1.1); /* Safari 3-8 */
+          transform: scale(1.1);
         }
       }
     }
   }
+}
 
-  &__links {
-    max-width: 1120px;
-    margin: 0 auto;
+@media screen and (max-width: 992px) {
+  .projects__container {
+    .herobanner__content {
+      padding: 5rem 2em;
+    }
+  }
+}
 
-    a {
-      font-size: 1.8em;
-      display: block;
-      color: #72424d;
+@media screen and (max-width: 992px) {
+  .projects__container {
+    .herobanner__content {
+      padding: 5rem 2rem 5rem 2rem;
+    }
+
+    &__links {
+      padding: 1em 2em 5em 2em;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .projects__container {
+    .herobanner__content {
+      padding: 7rem 2rem 5rem 2rem;
     }
   }
 }
