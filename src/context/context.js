@@ -9,8 +9,10 @@ import sublinks from "../components/stripe-submenu/data";
 import products from "../components/cart/data";
 import reducer from "../components/cart/reducer";
 
+/* PART OF COCKTAILS */
 const cocktailsUrl =
   "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
+/*____________________________*/
 
 /* PART OF CART */
 const url = "https://course-api.com/react-useReducer-cart-project";
@@ -49,7 +51,7 @@ const AppProvider = ({ children }) => {
 
   /* STRIPE APP */
   const [isStripeSidebarOpen, setIsStripeSidebarOpen] = useState(false);
-  const [isSubmenuOpen, setIsSubmenuOpen] = useState(true);
+  const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
   const [page, setPage] = useState({ page: "", links: [] });
   const [location, setLocation] = useState({});
 
